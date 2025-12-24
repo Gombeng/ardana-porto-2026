@@ -11,9 +11,9 @@ import {
 export default function Home() {
   return (
     <Container
-      p={"5"}
+      py={"10"}
       maxW={"6xl"}
-      minH={"60svh"}
+      minH={"70svh"}
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
