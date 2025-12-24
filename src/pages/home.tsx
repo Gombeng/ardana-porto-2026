@@ -17,6 +17,7 @@ export default function Home() {
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
+      id="home"
     >
       <Flex
         w={"full"}

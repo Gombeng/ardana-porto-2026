@@ -11,7 +11,7 @@ import { SERVICES } from "./const";
 
 export default function Service() {
   return (
-    <Box bg="bg.stripped">
+    <Box bg="bg.stripped" id="services">
       <Container py={"10"}>
         <VStack>
           <Heading fontWeight={"bold"} fontSize={"2xl"} bg={"white"}>

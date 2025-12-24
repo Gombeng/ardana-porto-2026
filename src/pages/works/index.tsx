@@ -10,7 +10,7 @@ export default function Works() {
   });
 
   return (
-    <Container py="10">
+    <Container py="10" id="works" maxW={'6xl'}>
       <VStack>
         <Heading fontWeight={"bold"} fontSize="2xl">
           Selected Works

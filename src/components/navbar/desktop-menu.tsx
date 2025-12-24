@@ -1,0 +1,24 @@
+import { Button, Flex, Link } from "@chakra-ui/react";
+import { LINKS } from "./const";
+
+export default function DesktopMenu() {
+  return (
+    <Flex gap={{ base: "7", lg: "10" }} display={{ base: "none", md: "flex" }}>
+      {LINKS.map((link) => (
+        <Link
+          fontSize={"md"}
+          fontWeight={"bold"}
+          href={link.href}
+          p={1}
+          ps={3}
+          transition="all 0.15s ease"
+          textDecor={"none"}
+          outline={'none'}
+        >
+          {link.title}
+        </Link>
+      ))}
+      <Button>Let's Chat</Button>
+    </Flex>
+  );
+}

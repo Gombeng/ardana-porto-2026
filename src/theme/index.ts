@@ -27,6 +27,9 @@ const config = defineConfig({
     },
 
     globalCss: {
+        html: {
+            scrollBehavior: 'smooth'
+        },
 
         body: {
             bg: "gray.50",
