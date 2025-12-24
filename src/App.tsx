@@ -15,15 +15,19 @@ import {
   LiaWindowMaximize,
   LiaWindowMinimize,
 } from "react-icons/lia";
+import Home from "./pages/home";
+import { LogoDesktop, LogoMobile } from "./assets/images";
 
 export default function App() {
   return (
     <Box>
-      <Container bg={"bg.subtle"} maxW={"full"}>
-        <Container p={"5"}>
+      <Box bg={"bg.subtle"} maxW={"full"}>
+        <Container p={"5"} py={"3"} maxW={"8xl"}>
           <Navbar />
         </Container>
-      </Container>
+      </Box>
+
+      <Home />
 
       <Container p={"5"}>
         <HStack>
@@ -46,8 +50,14 @@ export default function App() {
 
 function Navbar() {
   return (
-    <Flex justifyContent={"space-between"}>
-      <Text>Logo</Text>
+    <Flex justifyContent={"space-between"} alignItems={"center"}>
+      <Box w={"20"} display={{ base: "block", md: "none" }}>
+        <Image src={LogoMobile} />
+      </Box>
+
+      <Box w={"20"} display={{ base: "none", md: "block" }}>
+        <Image src={LogoDesktop} />
+      </Box>
 
       <Box>menu here</Box>
     </Flex>
@@ -78,6 +88,9 @@ function CardComp() {
         <Image
           src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
           alt="Green double couch with wooden legs"
+          m={"5"}
+          border={"3px solid"}
+          boxShadow={"3px 3px 0 black"}
         />
       </Card.Header>
       <Card.Body>
