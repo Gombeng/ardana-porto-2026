@@ -27,7 +27,7 @@ export default function ServiceCard({
             <Icon size={30} />
           </Box>
 
-          <Heading size="md">{title}</Heading>
+          <Heading size="lg">{title}</Heading>
 
           <Text color="fg.muted">{desc}</Text>
         </VStack>
