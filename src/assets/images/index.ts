@@ -8,6 +8,8 @@ import ImageLanding1 from './landing1.webp'
 import ImageLanding2 from './landing2.webp'
 import ImageLanding3 from './landing3.webp'
 
+import ImageHero from './profile1.webp'
+
 export {
     LogoMobile,
     LogoDesktop,
@@ -16,4 +18,5 @@ export {
     ImageLanding1,
     ImageLanding2,
     ImageLanding3,
+    ImageHero
 }

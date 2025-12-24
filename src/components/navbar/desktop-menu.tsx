@@ -3,9 +3,14 @@ import { LINKS } from "./const";
 
 export default function DesktopMenu() {
   return (
-    <Flex gap={{ base: "7", lg: "10" }} display={{ base: "none", md: "flex" }} me={4}>
+    <Flex
+      gap={{ base: "7", lg: "10" }}
+      display={{ base: "none", md: "flex" }}
+      me={4}
+    >
       {LINKS.map((link) => (
         <Link
+          key={link.href}
           fontSize={"md"}
           fontWeight={"bold"}
           href={link.href}
@@ -13,12 +18,12 @@ export default function DesktopMenu() {
           ps={3}
           transition="all 0.15s ease"
           textDecor={"none"}
-          outline={'none'}
+          outline={"none"}
         >
           {link.title}
         </Link>
       ))}
-      <Button>Let's Chat</Button>
+      <Button>Contact me</Button>
     </Flex>
   );
 }

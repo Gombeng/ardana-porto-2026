@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import { LuArrowRight } from "react-icons/lu";
@@ -20,9 +21,17 @@ interface IWorkCard {
   title: string;
   desc: string;
   cta: string;
+  href: string;
 }
 
-export default function WorkCard({ file, image, title, desc, cta }: IWorkCard) {
+export default function WorkCard({
+  file,
+  image,
+  title,
+  desc,
+  cta,
+  href,
+}: IWorkCard) {
   return (
     <Card.Root>
       <Card.Header>
@@ -65,21 +74,23 @@ export default function WorkCard({ file, image, title, desc, cta }: IWorkCard) {
       </Card.Body>
 
       <Card.Footer pt={0}>
-        <Button
-          gap="1"
-          _hover={{
-            boxShadow: "4px 4px 0 black",
-            "& .arrow-icon": {
-              transform: "rotate(-35deg) translateX(2px)",
-            },
-          }}
-        >
-          {cta}
+        <Link href={href} target="_blank" rel="noreferrer">
+          <Button
+            gap="2"
+            _hover={{
+              boxShadow: "4px 4px 0 black",
+              "& .arrow-icon": {
+                transform: "rotate(-35deg) translateX(2px)",
+              },
+            }}
+          >
+            {cta}
 
-          <Box className="arrow-icon" transition="transform 0.2s ease">
-            <LuArrowRight />
-          </Box>
-        </Button>
+            <Box className="arrow-icon" transition="transform 0.2s ease">
+              <LuArrowRight />
+            </Box>
+          </Button>
+        </Link>
       </Card.Footer>
     </Card.Root>
   );

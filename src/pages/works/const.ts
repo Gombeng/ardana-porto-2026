@@ -8,6 +8,7 @@ export const WORKS = [
         desc:
             "Corporate landing page designed to present products clearly and support export-focused inquiries.",
         cta: "See Result",
+        href: 'https://broom-stick-landing-page.vercel.app/'
     },
     {
         title: "Woodkey Interior",
@@ -16,6 +17,7 @@ export const WORKS = [
         desc:
             "Landing page for an interior business, focused on visual storytelling and service credibility.",
         cta: "See Result",
+        href: 'https://woodkey.vercel.app/'
     },
     {
         title: "Road Vroom Car Rental",
@@ -24,6 +26,7 @@ export const WORKS = [
         desc:
             "High-conversion rental landing page optimized for WhatsApp leads and local SEO.",
         cta: "See Result",
+        href: 'https://road-vroom.syahrizalardana.my.id/'
     },
     {
         title: "Christopher Personal Website",
@@ -32,6 +35,7 @@ export const WORKS = [
         desc:
             "Personal website highlighting leadership experience, background, and contact flow.",
         cta: "See Result",
+        href: 'https://chris-personal-web.vercel.app/#contact'
     },
     {
         title: "Syahrizal Ardana Portfolio",
@@ -40,5 +44,6 @@ export const WORKS = [
         desc:
             "Personal portfolio showcasing frontend skills, experience, and selected works.",
         cta: "See Result",
+        href: 'https://syahrizal-portfolio.vercel.app/'
     },
 ];
