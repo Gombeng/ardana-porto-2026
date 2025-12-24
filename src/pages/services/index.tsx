@@ -14,10 +14,16 @@ export default function Service() {
     <Box bg="bg.stripped">
       <Container py={"10"}>
         <VStack>
-          <Heading fontWeight={"bold"} fontSize={"2xl"}>
+          <Heading fontWeight={"bold"} fontSize={"2xl"} bg={"white"}>
             Services
           </Heading>
-          <Text color="gray.800" maxW="lg" textAlign="center" mb={"8"}>
+          <Text
+            color="fg.muted"
+            maxW="lg"
+            textAlign="center"
+            mb={"8"}
+            bg={"white"}
+          >
             Straightforward web solutions. Built to work.
           </Text>
 
