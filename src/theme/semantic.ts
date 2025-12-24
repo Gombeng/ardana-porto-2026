@@ -11,6 +11,17 @@ export const semanticTokens = {
                     _light: "{colors.gray.200}",
                 },
             },
+            stripped: {
+                value: {
+                    base: `repeating-linear-gradient(
+                        45deg,
+                        var(--chakra-colors-gray-50),
+                        var(--chakra-colors-gray-50) 16px,
+                        var(--chakra-colors-gray-100) 16px,
+                        var(--chakra-colors-gray-100) 32px
+                      )`
+                }
+            }
         },
 
         fg: {

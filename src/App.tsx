@@ -5,7 +5,6 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
   Image,
   SimpleGrid,
   Text,
@@ -17,6 +16,7 @@ import {
 } from "react-icons/lia";
 import Home from "./pages/home";
 import { LogoDesktop, LogoMobile } from "./assets/images";
+import Service from "./pages/services";
 
 export default function App() {
   return (
@@ -28,13 +28,7 @@ export default function App() {
       </Box>
 
       <Home />
-
-      <Container p={"5"}>
-        <HStack>
-          <Button>Click me</Button>
-          <Button>Click me</Button>
-        </HStack>
-      </Container>
+      <Service />
 
       <Container p={"5"}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={"5"}>
