@@ -66,7 +66,6 @@ export default function WorkCard({ file, image, title, desc, cta }: IWorkCard) {
 
       <Card.Footer pt={0}>
         <Button
-          size="sm"
           gap="1"
           _hover={{
             boxShadow: "4px 4px 0 black",
