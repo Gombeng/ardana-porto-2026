@@ -25,7 +25,7 @@ export default function Home() {
         gap={{ base: "5", md: "9" }}
         alignItems={"center"}
       >
-        <Box flex={1}>
+        <Box flex={1} mt={{ base: "5", md: "0" }}>
           <Heading fontWeight={"bold"} fontSize={"2xl"}>
             Hello!
           </Heading>
@@ -43,7 +43,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             alt="Green double couch with wooden legs"
             justifySelf={"end"}
-            maxW={{ md: "xs", lg: "sm" }}
+            maxW={{ sm: "xs", lg: "sm" }}
             border={"3px solid"}
             boxShadow={"3px 3px 0 black"}
             // m={"5"}
