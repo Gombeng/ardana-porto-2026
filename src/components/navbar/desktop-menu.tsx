@@ -3,7 +3,7 @@ import { LINKS } from "./const";
 
 export default function DesktopMenu() {
   return (
-    <Flex gap={{ base: "7", lg: "10" }} display={{ base: "none", md: "flex" }}>
+    <Flex gap={{ base: "7", lg: "10" }} display={{ base: "none", md: "flex" }} me={4}>
       {LINKS.map((link) => (
         <Link
           fontSize={"md"}

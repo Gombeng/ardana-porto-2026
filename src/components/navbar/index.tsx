@@ -5,7 +5,7 @@ import DesktopMenu from "./desktop-menu";
 
 export default function Navbar() {
   return (
-    <Container p={"4"} px={0} maxW={"6xl"}>
+    <Container p={"3"} px={0} maxW={"6xl"}>
       <Flex justifyContent={"space-between"} alignItems={"center"}>
         <Link
           outline={"none"}

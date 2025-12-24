@@ -19,7 +19,7 @@ export default function MobileMenu() {
   return (
     <Drawer.Root open={open} onOpenChange={handleClick}>
       <Drawer.Trigger asChild display={{ base: "block", md: "none" }}>
-        <Button size={"xs"}>
+        <Button size={"xs"} me={"4"}>
           <LuMenu />
         </Button>
       </Drawer.Trigger>
@@ -43,7 +43,7 @@ export default function MobileMenu() {
                       borderStart: "6px solid",
                     }}
                     onClick={handleClick}
-                    outline={'none'}
+                    outline={"none"}
                   >
                     {link.title}
                   </Link>
