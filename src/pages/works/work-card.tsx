@@ -74,7 +74,7 @@ export default function WorkCard({
       </Card.Body>
 
       <Card.Footer pt={0}>
-        <Link href={href} target="_blank" rel="noreferrer">
+        <Link href={href} target="_blank" rel="noreferrer" textDecor={"none"}>
           <Button
             gap="2"
             _hover={{
