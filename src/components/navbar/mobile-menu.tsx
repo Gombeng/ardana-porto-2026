@@ -9,6 +9,7 @@ import {
 import { LINKS } from "./const";
 import { LuMenu } from "react-icons/lu";
 import { useState } from "react";
+import { getGenericChatLink } from "../../utils";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -51,7 +52,14 @@ export default function MobileMenu() {
               </Flex>
             </Drawer.Body>
             <Drawer.Footer>
-              <Button>Let's Chat!</Button>
+              <Link
+                href={getGenericChatLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                textDecor={"none"}
+              >
+                <Button>Let's Chat!</Button>
+              </Link>
             </Drawer.Footer>
 
             <Drawer.CloseTrigger asChild>

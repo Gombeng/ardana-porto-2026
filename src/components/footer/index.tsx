@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { LogoDesktop } from "../../assets/images";
 import { LINKS } from "../navbar/const";
+import { getGenericChatLink } from "../../utils";
 
 export default function Footer() {
   return (
@@ -39,10 +40,12 @@ export default function Footer() {
             <Link
               fontWeight={"medium"}
               fontSize={{ base: "sm", md: "md" }}
-              href={"#contact-me"}
               textDecor={"none"}
               p={1}
               outline={"none"}
+              href={getGenericChatLink()}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Contact Me
             </Link>

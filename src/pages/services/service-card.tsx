@@ -1,5 +1,15 @@
-import { Box, Button, Card, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Card,
+  Heading,
+  Link,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import type { IconType } from "react-icons";
+import { getServiceChatLink } from "../../utils";
+import { BiChat } from "react-icons/bi";
 
 interface IServiceCard {
   icon: IconType;
@@ -33,7 +43,17 @@ export default function ServiceCard({
         </VStack>
       </Card.Body>
       <Card.Footer pt={0}>
-        <Button>{cta}</Button>
+        <Link
+          href={getServiceChatLink(title)}
+          target="_blank"
+          rel="noopener noreferrer"
+          textDecor={"none"}
+        >
+          <Button alignItems={"center"} gap={"3"}>
+            {cta}
+            <BiChat />
+          </Button>
+        </Link>
       </Card.Footer>
     </Card.Root>
   );

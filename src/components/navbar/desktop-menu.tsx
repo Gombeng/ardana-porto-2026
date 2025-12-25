@@ -1,5 +1,6 @@
 import { Button, Flex, Link } from "@chakra-ui/react";
 import { LINKS } from "./const";
+import { getGenericChatLink } from "../../utils";
 
 export default function DesktopMenu() {
   return (
@@ -23,7 +24,14 @@ export default function DesktopMenu() {
           {link.title}
         </Link>
       ))}
-      <Button>Contact me</Button>
+      <Link
+        href={getGenericChatLink()}
+        target="_blank"
+        rel="noopener noreferrer"
+        textDecor={"none"}
+      >
+        <Button>Let's Chat!</Button>
+      </Link>
     </Flex>
   );
 }

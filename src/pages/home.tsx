@@ -5,9 +5,11 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import { ImageHero } from "../assets/images";
+import { getGenericChatLink } from "../utils";
 
 export default function Home() {
   return (
@@ -38,7 +40,14 @@ export default function Home() {
             I design and build sharp web products. Frontend systems, UI
             architecture, and real-world execution.
           </Text>
-          <Button>Let's Chat!</Button>
+          <Link
+            href={getGenericChatLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            textDecor={"none"}
+          >
+            <Button>Let's Chat!</Button>
+          </Link>
         </Box>
         <Box flex={1}>
           <Image
