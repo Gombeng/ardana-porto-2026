@@ -7,9 +7,6 @@ export function getGenericChatLink() {
 }
 
 export function getServiceChatLink(serviceName: string) {
-    const message = `
-        Halo Saya tertarik dengan layanan *${serviceName}*.
-        Boleh minta detail harga dan prosesnya?
-    `;
+    const message = `Halo Saya tertarik dengan layanan *${serviceName}*. Boleh minta detail harga dan prosesnya?`;
     return `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`
 }
