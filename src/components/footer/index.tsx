@@ -25,8 +25,9 @@ export default function Footer() {
             flexDir={{ base: "column", sm: "row" }}
             alignItems={"center"}
           >
-            {LINKS.map((link) => (
+            {LINKS.map((link, idx) => (
               <Link
+                key={idx}
                 fontWeight={"medium"}
                 fontSize={{ base: "sm", md: "md" }}
                 href={link.href}
