@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import Service from "./pages/services";
 import Works from "./pages/works";
 import Navbar from "./components/navbar";
+import Testimonials from "./pages/testimonials";
 
 export default function App() {
   return (
@@ -14,6 +15,10 @@ export default function App() {
       <Home />
       <Service />
       <Works />
+
+      <Box bg={"bg.stripped"} maxW={"full"}>
+        <Testimonials />
+      </Box>
     </Box>
   );
 }
